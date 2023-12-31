@@ -41,6 +41,34 @@ main {
     float: right
 }
 
+.project-list {
+    display: flex;
+    flex-direction: column; /* Stacks the projects on top of each other */
+    gap: 20px; /* Adds space between each project */
+}
+
+.project {
+    display: flex;
+    align-items: flex-start; /* Aligns items to the start of the container */
+  }
+  
+  .project img {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    width: 100%; /* Makes the image responsive */
+    max-width: 300px; /* Sets a maximum width for the image */
+  }
+  
+  .project-content {
+    flex: 1;
+  }
+  
+  @media (max-width: 600px) {
+    .project img {
+      max-width: 200px; /* Reduces the maximum width of the image on small screens */
+    }
+  }
+
 .avatar {
     display: table-cell;
     vertical-align: top;
