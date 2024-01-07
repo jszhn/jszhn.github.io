@@ -23,6 +23,7 @@ section {
     width: 85%;
     margin: 0 auto 10px auto;
     max-width: 700px;
+    position: relative;
 }
 
 main {
@@ -45,7 +46,7 @@ main {
     display: flex;
     flex-direction: column; /* Stacks the projects on top of each other */
     gap: 20px; /* Adds space between each project */
-}
+  }
 
 .project {
     display: flex;
@@ -67,7 +68,11 @@ main {
     .project img {
       max-width: 200px; /* Reduces the maximum width of the image on small screens */
     }
-  }
+}
+
+span.email b { /* safe, accessible email obfuscation */
+    display: none;
+}
 
 .avatar {
     display: table-cell;
